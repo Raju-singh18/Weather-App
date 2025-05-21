@@ -13,7 +13,7 @@ document.getElementById('getWeatherBtn').addEventListener('click', () => {
   }
 
   const apiKey = '71f9f13fbd6e49bfb0f180320251705';
-  const apiUrl = `http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${encodeURIComponent(city)}&aqi=no`;
+  const apiUrl = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${encodeURIComponent(city)}&aqi=no`;
 
   fetch(apiUrl)
     .then(response => {
@@ -40,4 +40,5 @@ document.getElementById('getWeatherBtn').addEventListener('click', () => {
       weatherResult.classList.add('hidden');
     });
 });
+
 
